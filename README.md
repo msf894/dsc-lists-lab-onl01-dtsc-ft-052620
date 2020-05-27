@@ -50,7 +50,7 @@ First, set the variable `italy` to be equal to the third to last element from `c
 
 
 ```python
-italy = None # 'Italy'
+italy = countries[-3] # 'Italy'
 italy
 ```
 
@@ -65,8 +65,8 @@ Now access the fourth element and set it equal to the variable `mexico`.
 
 
 ```python
-mexico = None
-mexico
+kindof_neighbors = countries[2:6]
+kindof_neighbors
 ```
 
 Notice that the second through fifth elements are all in a row and all in the Western Hemisphere.  Assign that subset of elements to a variable called `kindof_neighbors`.
@@ -83,14 +83,14 @@ Ok, now let's add a couple of countries onto this list.  At the end of the list,
 
 
 ```python
-None # add code here
+countries.append("Malta")
 ```
 
 Then add the country 'Thailand'.
 
 
 ```python
-None # add code here
+countries.append("Thailand")
 ```
 
 Now your list of countries should look like the following.
@@ -106,7 +106,7 @@ You may have noticed that "New Mexico" is included in our list of countries.  Th
 
 
 ```python
-None # add code here
+countries[6] = "USA"
 ```
 
 
@@ -136,7 +136,7 @@ First, use the `set` and `list` functions to return a unique list of countries. 
 
 
 ```python
-unique_countries = None
+unique_countries = list(set(countries))
 ```
 
 
@@ -149,7 +149,7 @@ Now the number of repeat countries should be the number of countries minus the n
 
 
 ```python
-num_of_repeats = None
+num_of_repeats = len(countries) - len(unique_countries)
 num_of_repeats # 3
 ```
 
